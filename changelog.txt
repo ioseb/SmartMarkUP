@@ -1,0 +1,16 @@
+SmartMarkup 1.1.0 11-12-2008
+- Added "onBeforePreview" event to the "preview" configuration. Now it is possible to implement client side parsers
+- Changed add-on's "content()" callback function, now it needs to return HTML string or DOM element
+- Changed all existing addons to conform new API
+- Added auto complete functionality for XML/HTML tags
+- Added auto indentation
+- Better support of BackSpace button
+- Added missing background color
+- Fixed tooblar generation problem in IE
+- Now it is possible to customize preview. With providing target element's ID preview window can be placed anywhere on the page
+- Fixed bug with preview template, now template HTML code is cached
+- Removed "parserVar" preview parameter
+- Now preview button passes all form elements to the server side parser script 
+
+SmartMarkup 1.0.0 11-12-2008
+- Initial release
