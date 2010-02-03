@@ -26,32 +26,32 @@
 // THE SOFTWARE.
 // ----------------------------------------------------------------------------
 (function($) {
-	
-	$.fn.sMarkUp = function(conf, height) {
-		SMarkUp.bind(this.get(), conf, height);
-	};
-	
-	$.sMarkUp = function(settings) {
-		SMarkUp.insert(settings);
-	};
-	
-	$.sMarkUpGetInstance = function(selector) {
-		return SMarkUp.getInstance(selector.replace(/^#/g, ''));
-	};
-	
-	$.sMarkUpGetInstanceByName = function(name) {
-		return SMarkUp.getInstanceByName(name);
-	};
-	
-	$.sMarkUpRemove = function(selector) {
-		if (!selector) {
-			selector = 'textarea';
-		}
-		$(selector).each(
-			function() {
-				$.sMarkUpGetInstance(this.id).remove();
-			}
-		);
-	};
-	
+  
+  $.fn.sMarkUp = function(conf, height) {
+    SMarkUp.bind(this.get(), conf, height);
+  };
+  
+  $.sMarkUp = function(settings) {
+    SMarkUp.insert(settings);
+  };
+  
+  $.sMarkUpGetInstance = function(selector) {
+    return SMarkUp.getInstance(selector.replace(/^#/g, ''));
+  };
+  
+  $.sMarkUpGetInstanceByName = function(name) {
+    return SMarkUp.getInstanceByName(name);
+  };
+  
+  $.sMarkUpRemove = function(selector) {
+    if (!selector) {
+      selector = 'textarea';
+    }
+    $(selector).each(
+      function() {
+        $.sMarkUpGetInstance(this.id).remove();
+      }
+    );
+  };
+  
 })(jQuery);
